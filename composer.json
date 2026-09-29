@@ -1,0 +1,36 @@
+{
+    "name": "nnaemekanweke/logwatch",
+    "description": "Push your Laravel app's logs to LogWatch as a standard log channel.",
+    "keywords": ["laravel", "logging", "logwatch", "observability", "monolog"],
+    "license": "MIT",
+    "type": "library",
+    "require": {
+        "php": "^8.2",
+        "illuminate/contracts": "^11.0|^12.0|^13.0",
+        "illuminate/support": "^11.0|^12.0|^13.0",
+        "monolog/monolog": "^3.0"
+    },
+    "require-dev": {
+        "orchestra/testbench": "^9.0|^10.0|^11.0",
+        "phpunit/phpunit": "^11.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Nnaemekanweke\\Logwatch\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Nnaemekanweke\\Logwatch\\Tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Nnaemekanweke\\Logwatch\\LogWatchServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true
+}
