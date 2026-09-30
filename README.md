@@ -4,6 +4,12 @@ Push your Laravel app's logs to [LogWatch](https://github.com) as a standard
 Laravel log channel — no new logging API to learn, just `Log::info(...)` like
 always.
 
+**Requires Laravel 10, 11, 12, or 13, on PHP 8.1+.** Laravel 8 and 9 are past
+their security-support window (Composer's own installer now refuses to
+install them at all — every release is flagged by an unpatched advisory), so
+they're intentionally not supported. If you're still on one of them, upgrade
+Laravel first.
+
 ## Installation
 
 ```bash
